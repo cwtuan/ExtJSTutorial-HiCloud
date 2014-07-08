@@ -28,9 +28,9 @@ Ext.define('MyApp.view.Viewport', {
 		});
 
 		var enrty = {
-			// TODO servlet http://172.21.255.213/hidesk/entrypoint
 			// TODO dev and /
-			entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/app/view/Entry.js',
+			// entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/app/view/Entry.js',
+			entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/entrypoint',
 			entryClass : 'MyApp.view.Entry'
 		};
 

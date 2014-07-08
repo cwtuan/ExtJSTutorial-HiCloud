@@ -1,31 +1,25 @@
-// application entry point
+/**
+ * application entry point for valid user
+ */
+
 Ext.define('MyApp.view.Entry', {
 	extend : 'Ext.container.Container',
 
 	requires : [
 
 	// Utils
-	'MyApp.Session', 'MyApp.util.Format', 'MyApp.util.Validator', 'MyApp.util.Restful', 'MyApp.locale.Converter', 'Ext.util.Cookies',
-
-	'MyApp.Const', 'MyApp.Config', 'MyApp.ExtOverride', 'MyApp.util.Restful', 'MyApp.locale.Converter', 'MyApp.ux.proxy.NestedRest',
-			'MyApp.reader.RestTaskGrid', 'Ext.util.Cookies',
-			// 'MyApp.util.JsonWriter',
+	'MyApp.Session', 'MyApp.util.Format', 'MyApp.util.Validator', 'MyApp.util.Restful', 'MyApp.locale.Converter', 'Ext.util.Cookies', 'MyApp.Const',
+			'MyApp.Config', 'MyApp.ExtOverride', 'MyApp.util.Restful', 'MyApp.ux.proxy.NestedRest', 'MyApp.reader.RestTaskGrid', 'MyApp.action.Action',
 
 			// events
 			'MyApp.event.Session', 'MyApp.event.Project', 'MyApp.event.User',
-
-			// actions
-			'MyApp.action.Action',
 
 			// views ux
 			'MyApp.ux.image.ImageViewer', 'MyApp.ux.image.MultiImageViewer', 'MyApp.ux.button.LinkButton', 'MyApp.ux.toolbar.NotifyBar', 'MyApp.ux.IFrame',
 			'MyApp.ux.grid.column.ComponentColumn',
 
 			// views
-			'MyApp.view.project.ProjectView',
-
-			// win
-			'MyApp.view.about.OpenSourceLicenseWin',
+			'MyApp.view.project.ProjectView', 'MyApp.view.about.OpenSourceLicenseWin',
 
 			// layout
 			'Ext.layout.container.Card', 'Ext.layout.container.Border'
