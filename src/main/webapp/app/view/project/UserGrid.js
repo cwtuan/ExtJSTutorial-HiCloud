@@ -70,6 +70,13 @@ Ext.define('MyApp.view.project.UserGrid', {
 				me.store.add(userData);
 			}
 		});
+
+		MyApp.event.Project.on({
+			select : function(record) {
+				console.log('on project select event', record);
+				me.load(record);
+			}
+		});
 	},
 
 	load : function(projectRecord) {

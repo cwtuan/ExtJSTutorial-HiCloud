@@ -1,57 +1,47 @@
+// application entry point
 Ext.define('MyApp.view.Entry', {
 	extend : 'Ext.container.Container',
 
-	// requires : [
-	//
-	// // Utils
-	// 'MyApp.Session', 'MyApp.util.Format', 'MyApp.util.Validator', 'MyApp.util.Restful', 'MyApp.locale.Converter',
-	// 'Ext.util.Cookies',
-	//
-	// 'MyApp.Const', 'MyApp.Config', 'MyApp.ExtFix', 'MyApp.ExtOverride', 'MyApp.ExtSetting', 'MyApp.util.Restful',
-	// 'MyApp.locale.Converter',
-	// 'MyApp.ux.proxy.NestedRest', 'MyApp.reader.RestTaskGrid', 'Ext.util.Cookies',
-	// // 'MyApp.util.JsonWriter',
-	//
-	// // events
-	// 'MyApp.event.Session', 'MyApp.event.Project', 'MyApp.event.User',
-	//
-	// // actions
-	// 'MyApp.action.Action',
-	//
-	// // views ux
-	// 'MyApp.ux.image.ImageViewer', 'MyApp.ux.image.MultiImageViewer', 'MyApp.ux.button.LinkButton',
-	// 'MyApp.ux.toolbar.NotifyBar', 'MyApp.ux.IFrame',
-	// 'MyApp.ux.grid.column.ComponentColumn',
-	//
-	// // views
-	// 'MyApp.view.MainToolbar', 'MyApp.view.project.ProjectView',
-	//
-	// // win
-	// 'MyApp.view.about.OpenSourceLicenseWin',
-	//
-	// // layout
-	// 'Ext.layout.container.Card', 'Ext.layout.container.Border'
-	//
-	// ],
+	requires : [
 
-	// layout : 'border',
-	// defaults : {
-	// border : false,
-	// xtype : 'container'
-	// },
+	// Utils
+	'MyApp.Session', 'MyApp.util.Format', 'MyApp.util.Validator', 'MyApp.util.Restful', 'MyApp.locale.Converter', 'Ext.util.Cookies',
 
-	items : [ {
-		xtype : 'datefield',
-		name : 'startDate',
-		fieldLabel : 'Start date'
-	}, {
-		xtype : 'datefield',
-		name : 'endDate',
-		fieldLabel : 'End date'
-	} ],
+	'MyApp.Const', 'MyApp.Config', 'MyApp.ExtOverride', 'MyApp.util.Restful', 'MyApp.locale.Converter', 'MyApp.ux.proxy.NestedRest',
+			'MyApp.reader.RestTaskGrid', 'Ext.util.Cookies',
+			// 'MyApp.util.JsonWriter',
 
-	_initComponent : function() {
+			// events
+			'MyApp.event.Session', 'MyApp.event.Project', 'MyApp.event.User',
+
+			// actions
+			'MyApp.action.Action',
+
+			// views ux
+			'MyApp.ux.image.ImageViewer', 'MyApp.ux.image.MultiImageViewer', 'MyApp.ux.button.LinkButton', 'MyApp.ux.toolbar.NotifyBar', 'MyApp.ux.IFrame',
+			'MyApp.ux.grid.column.ComponentColumn',
+
+			// views
+			'MyApp.view.project.ProjectView',
+
+			// win
+			'MyApp.view.about.OpenSourceLicenseWin',
+
+			// layout
+			'Ext.layout.container.Card', 'Ext.layout.container.Border'
+
+	],
+
+	layout : 'border',
+	defaults : {
+		border : false,
+		xtype : 'container'
+	},
+
+	initComponent : function() {
 		var me = this;
+
+		MyApp.ExtOverride.init(MyApp.Config);
 
 		MyApp.Session.getSession();
 
@@ -118,7 +108,7 @@ Ext.define('MyApp.view.Entry', {
 			xtype : 'panel',
 			region : 'center',
 			layout : 'card',
-			tbar : Ext.create('MyApp.view.MainToolbar', {
+			tbar : Ext.widget('toolbar', {
 				itemId : 'mainToolbar',
 				items : menuItems
 			}),

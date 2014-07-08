@@ -30,8 +30,14 @@ Ext.define('MyApp.view.project.ProjectGrid', {
 				if (me.store.getCount() != 0) {
 					// me.fireEvent('cellclick', me, null, 1, me.store.first());
 					me.getSelectionModel().select(0);
-
 				}
+			}
+		});
+
+		me.on({
+			select : function(grid, record) {
+				console.log('fire project select event', record)
+				MyApp.event.Project.fireEvent('select', record);
 			}
 		});
 

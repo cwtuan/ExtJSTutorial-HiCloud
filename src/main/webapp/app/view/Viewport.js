@@ -1,10 +1,11 @@
+// Viewport (hicloud)
 Ext.define('MyApp.view.Viewport', {
 	extend : 'Ext.container.Viewport',
 	renderTo : Ext.getBody(),
 
 	requires : [
 	// layout
-	'Ext.layout.container.Card', 'Ext.layout.container.Border'
+	'Ext.layout.container.Card', 'Ext.layout.container.Border', 'MyApp.HiCloudSetting'
 
 	],
 	id : 'viewport',
@@ -15,6 +16,9 @@ Ext.define('MyApp.view.Viewport', {
 	},
 	initComponent : function() {
 		var me = this;
+
+		// default setting from hicloud
+		MyApp.HiCloudSetting.init();
 
 		var menuItems = [];
 
@@ -27,7 +31,7 @@ Ext.define('MyApp.view.Viewport', {
 			// TODO servlet http://172.21.255.213/hidesk/entrypoint
 			// TODO dev and /
 			entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/app/view/Entry.js',
-			containerClass : 'MyApp.view.Entry'
+			entryClass : 'MyApp.view.Entry'
 		};
 
 		loadJS(enrty.entrypoint);
@@ -43,7 +47,7 @@ Ext.define('MyApp.view.Viewport', {
 					backgroundColor : '#919191',
 				}
 			}),
-			items : [ Ext.create(enrty.containerClass) ]
+			items : [ Ext.create(enrty.entryClass) ]
 		} ];
 
 		me.callParent(arguments);
