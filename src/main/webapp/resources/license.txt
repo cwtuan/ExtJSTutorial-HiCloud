@@ -1,0 +1,210 @@
+﻿The following software may be included in this project: Ext JS 4.1
+This software contains the following license and notice below:
+
+Copyright (c) 2006-2012, Sencha Inc.
+All rights reserved.
+licensing@sencha.com
+http://www.sencha.com/license
+
+==================================
+The following software may be included in this project: Bootstrap v3.0.0
+This software contains the following license and notice below:
+
+Copyright 2013 Twitter, Inc
+Licensed under the Apache License v2.0
+http://www.apache.org/licenses/LICENSE-2.0 *
+Designed and built with all the love in the world @twitter by @mdo and @fat.
+
+==================================
+The following software may be included in this project: Ext.ux.wizard.Wizard
+This software contains the following license and notice below:
+
+Licensed under GNU LESSER GENERAL PUBLIC LICENSE Version 3
+@author Thorsten Suckow-Homberg <ts@siteartwork.de>
+@url http://www.siteartwork.de/wizardcomponent
+
+==================================
+The following software may be included in this project: CTemplate 1.1
+This software contains the following license and notice below:
+
+Copyright(c) 2011-2013 Skirtle's Den
+http://skirtlesden.com/ux/ctemplate
+This software is provided without any kind of warranty. Evaluating its applicability, suitability and legality for a particular purpose is the responsibility of those choosing to include it as part of their software. No guarantee is provided as to the future maintenance or availability of this software.
+The code provided includes a header containing the copyright information, version number and the URL of the license for the software. This header must be included on all copies of the code including modified or minified versions. If the code is modified then an extra note should be added to the header making clear that the code is not as originally distributed. Minification or concatenation with other files are not considered to be modifications for this purpose but the requirement to include the header remains.
+You may use this code in your software, free of charge, either in its present form or with modifications. No charge may be made for the redistribution of this code either in its original form or with modifications though it may be used in commercial applications which are not themselves provided free of charge. Inclusion of this software does not require you to release the source code of your application.
+Alternative licensing arrangements can be made upon request. If national or regional laws supersede any of the terms of this license then the remainder of the license still applies and you should request an alternative license.
+
+==================================
+The following software may be included in this project: Component Column 1.1
+This software contains the following license and notice below:
+
+Copyright(c) 2011-2013 Skirtle's Den
+http://skirtlesden.com/ux/component-column
+This software is provided without any kind of warranty. Evaluating its applicability, suitability and legality for a particular purpose is the responsibility of those choosing to include it as part of their software. No guarantee is provided as to the future maintenance or availability of this software.
+The code provided includes a header containing the copyright information, version number and the URL of the license for the software. This header must be included on all copies of the code including modified or minified versions. If the code is modified then an extra note should be added to the header making clear that the code is not as originally distributed. Minification or concatenation with other files are not considered to be modifications for this purpose but the requirement to include the header remains.
+You may use this code in your software, free of charge, either in its present form or with modifications. No charge may be made for the redistribution of this code either in its original form or with modifications though it may be used in commercial applications which are not themselves provided free of charge. Inclusion of this software does not require you to release the source code of your application.
+Alternative licensing arrangements can be made upon request. If national or regional laws supersede any of the terms of this license then the remainder of the license still applies and you should request an alternative license.
+
+==================================
+The following software may be included in this project: NotifyBar.js
+This software contains the following license and notice below:
+
+aghuddleston
+http://ahlearns.wordpress.com/2011/12/16/ext-js-4-notification-bar
+
+==================================
+The following software may be included in this project: extjs-upload-widget
+This software contains the following license and notice below:
+
+Copyright (c) 2008-2013, Ivan Novakov, http://novakov.cz/ 
+https://github.com/ivan-novakov/extjs-upload-widget
+All rights reserved. 
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met: 
+
+    * Redistributions of source code must retain the above copyright notice, this
+      list of conditions and the following disclaimer. 
+
+    * Redistributions in binary form must reproduce the above copyright notice,
+      this list of conditions and the following disclaimer in the documentation
+      and/or other materials provided with the distribution. 
+
+    * Neither the name of Ivan Novakov nor the names of its contributors
+      may be used to endorse or promote products derived from this software
+      without specific prior written permission. 
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+==================================
+The following software may be included in this project: SWFObject v2.2
+This software contains the following license and notice below:
+
+The MIT License (MIT)
+
+Copyright (c) <2009> <https://code.google.com/p/swfobject/>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+==================================
+The following software may be included in this project: SWFUpload
+This software contains the following license and notice below:
+
+/**
+ * SWFUpload: http://www.swfupload.org, http://swfupload.googlecode.com
+ *
+ * mmSWFUpload 1.0: Flash upload dialog - http://profandesign.se/swfupload/,  http://www.vinterwebb.se/
+ *
+ * SWFUpload is (c) 2006-2007 Lars Huring, Olov Nilz幯 and Mammon Media and is released under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * SWFUpload 2 is (c) 2007-2008 Jake Roberts and is released under the MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ */
+ 
+==================================
+The following software may be included in this project: nprogress
+This software contains the following license and notice below:
+
+© 2013, Rico Sta. Cruz. Released under the MIT License.
+https://github.com/rstacruz/nprogress
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+==================================
+
+The following software may be included in this project: Highcharts-3.0.7
+This software contains the following license and notice below:
+
+Copyright Highsoft AS, Inc
+
+==================================
+
+The following software may be included in this project: Highcharts_Sencha
+This software contains the following license and notice below:
+
+You are permitted to use this software for non-profit organisation under:
+    Creative Commons Attribution-NonCommercial 3.0 License.
+   (http://creativecommons.org/licenses/by-nc/3.0/)
+
+If you are using the software for commercial and federal projects,
+you can obtain the permission to use and distribute free of charge as long as
+
+1. you inform me the author (kuan.joe@gmail.com) with a short description describing
+   your project using this software.
+
+2. you give acknowledgement to the author in your project
+    "Highcharts extension for Sencha products is developed & maintained by Joe Kuan (kuan.joe@gmail.com)" 
+
+==================================
+Image Licenses:
+stop_16x16.png	http://www.visualpharm.com/
+check_mark_16x16.png http://prax-08.deviantart.com/
+cloud_download_32.png http://ddgoodi.es/
+cloud_upload_32.png http://ddgoodi.es/
+filer_16.png http://creativecommons.org/licenses/by/3.0/us/
+file_1616.png  Various - http://tango.freedesktop.org/The_People - License:Public Domain
+problem_report_16x16  Gasyoun - http://twitter.com/gasyoun - License: Free for commercial use
+arrow_down_16x16.png  Dat Nguyen - http://splashyfish.com/ - License: Free for commercial use 
+arrow_up_16x16.png  Dat Nguyen - http://splashyfish.com/ - License: Free for commercial use 
+hourglass_16x16.png FatCow - http://www.fatcow.com/ - License: CC Attribution 3.0 United States - Commercial usage: Allowed
+email_16.png  PC - http://pc.de - License: Creative Commons (Attribution 3.0 Unported)
+paper_16.png   Various - http://tango.freedesktop.org/The_People - License: Public Domain
+list_16.png Mark James - http://www.famfamfam.com/lab/icons/silk/
+folder_16x16.png  Dat Nguyen - http://splashyfish.com/  License: Free for commercial use 
+compress_16.png  	FatCow - http://www.fatcow.com/ License: CC Attribution 3.0 United States
+image_16.png  	Yusuke Kamiyamane http://p.yusukekamiyamane.com/ -  License: CC Attribution 3.0 Unported 
+rar_16.png  FatCow Web Hosting - http://www.fatcow.com/ License: Creative Commons (Attribution 3.0 United States)
+video_16.png  Pixel Mixer - http://www.pixel-mixer.com/ License: Free for commercial use 
+addComment_16x16.png  SEM Labs - http://semlabs.co.uk/
+ChatBlue.png  Axialis Team - http://www.axialis.com/
+ChatGreen.png 	Axialis Team - http://www.axialis.com/
+ChatOrange.png 	Axialis Team - http://www.axialis.com/
+server_16.png Yusuke Kamiyamane - http://p.yusukekamiyamane.com/ License: Creative Commons (Attribution 3.0 Unported)
+money_16.png Webdesigner Depot - http://www.webdesignerdepot.com License: Free for commercial use
+webAdd_16x16.png  	Axialis Team - http://www.axialis.com/
+pointplus_16.png Yusuke Kamiyamane -  http://p.yusukekamiyamane.com/ License: Creative Commons (Attribution 3.0 Unported)
+credit_16.png FatCow -  http://www.fatcow.com/ License: Creative Commons (Attribution 3.0 Unported) 

@@ -1,0 +1,16 @@
+<%-- <%@ page language="java" pageEncoding="UTF-8"%> --%>
+<%-- <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%> --%>
+
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head>
+
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+
+<link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="css/images/favicon.ico" type="image/x-icon">
+
+
+<!-- <link type="text/css" rel="stylesheet" href="ext/resources/css/ext-all.css" /> -->
+<link rel="stylesheet" href="bootstrap.css">
+<link type="text/css" rel="stylesheet" href="css/override.css" />

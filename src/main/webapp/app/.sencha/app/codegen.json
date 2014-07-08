@@ -1,0 +1,34 @@
+{
+  "sources": {
+    "{modelFileName}.js.tpl.merge": {
+      "1b19f18f08e348a94bb0b08222b919f6c89a1c6b": "eJxlUctuwyAQvPsrVpGixYpF06sf7SnH9gcsH1CMGyQHI4wjV4h/L484VdM9sLA7MwzLaTW054OQnKBlSn2yK3f0OvV8pFaGAxZgM/DBV8NlXwKeAocZRj8CDIvYjcsg+NjPJbR2H88hbmxc+ExTCxogwyLPRkzS72Itv+tvMUwayI1p0Nx4fNsVoJg2gZsIdFajMAQLzAsQvnysfKoTio5cfplLBYeDeFZOdjQMnhPBreg2sRLz6h/YO6BqmS/EQphFCUN79HbMt4r71w7cE8tl2ZPAomVI1W/D5eTPUO4Se1cbNYbnN7vU2L09OJsBfHxKMoE2ZIfgbAtkFbLnKzQNrOdpkSaHd0AEDysQOle/+AuSZpcF59kPbR2MhQ\u003d\u003d"
+    },
+    "app.js.tpl.merge": {
+      "ca9cfeb9d3913435880b586ce4603fc886054b52": "eJzdVk1v4jAQvedXjJBQQsuGPdOyW6nlUGm3XanVSivEwU0GsOrYWX8AFcp/37HNR7qFQ6We6kuwx+955r1JzKbLq1pp+4sVz2yOWaGq3KAsFix3lotetxmcJUDjccENzLhAoOccJWpmsQQmS3B1GX4/vcBDgMJ1VebwRzkomAQsuQW7hzMT+CRiSZiZ0vCinAZW14IXzHIl+/DkPAINBrCBFRcCFmyJYBU8IVSo5+HAQHU4FFYLlEDH1aiJuTJQqBJ36RI1WGaeDRhXLCiRfUDOKZ9VIKsIIEyfgNJqJQRqA5TjkuPKhGrDEdpJ6VGdqJXPnmSYa1ZiJ08C0W2JTIgXoLCco/GZH0RYKSdKX4ngFd/pWCljKaKfD+FSSQxsXIIiRTTUghXElu1KuD7k2cvhdtZWg9SXyka1gsqBapeQP9KLezDTi9X38gW9a61KV5Bh0IkMJMmMPLIdKoRZTxj4wmZvpy9Ro1GCfKqYdL78PDkbJMlgADf3cHf/CDfjH+PHMXyJWpRcY2H5MjSVxr+O5rEnWlXUsTWDgl6dnOiutpvhahu9X6LWvESTJOO1zVvdlG1iv7EKh5BuKHJHP5u0n1zaWgCfjTq09jPY3vnW6oHhZNMNUz+WTDg0eYzACLKZk0XoqCyu9WCz3+yHLyJbMk1lWdo/mfapEG09NgJyQynaLO2nPdKclr9e0OMy7soFyrldXMD5Of+fObTDLAv7Jnx6LOwHnZvXziyyjS8dhrADNL2LN4AmOT0jIqelfxxwTS/bKrLXDs4hTbfU3SZoSxqMOlVbWT/SkFCTbiaQrbkscQ2jEawL5aTtwXdioWRJFpg2lwOiicgp+RVmbdd++7dySx3e0CEcMS2+u688C0vvsCzs/zyOBd1OGbZsifrBfj1YRR+ILbcJk6OOxdBry+LaOzyLgM9jWhTvlGumLe0H29a6Y7YHtG7Howa2b89XLrYC77Cyhfo8frZUPWVq8Ub4D3A2zJiz6lojXfv+W+D/AQ7BaoeJL/Mfnl7s3A\u003d\u003d"
+    }
+  },
+  "targets": {
+    "app/model/Job.js": {
+      "source": "{modelFileName}.js.tpl.merge",
+      "version": "1b19f18f08e348a94bb0b08222b919f6c89a1c6b",
+      "parameters": {
+        "appName": "MyApp",
+        "modelFileName": "Job",
+        "name": "Job",
+        "fields": "id:int:null"
+      }
+    },
+    "app/app.js": {
+      "source": "app.js.tpl.merge",
+      "version": "ca9cfeb9d3913435880b586ce4603fc886054b52",
+      "parameters": {
+        "appName": "MyApp",
+        "frameworkPath": "../ext",
+        "appModels": "Job",
+        "appControllers": "",
+        "appStores": "",
+        "appViews": ""
+      }
+    }
+  }
+}

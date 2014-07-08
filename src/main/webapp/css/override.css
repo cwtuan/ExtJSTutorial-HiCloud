@@ -1,0 +1,44 @@
+/* notify bar */
+/* http://ahlearns.wordpress.com/2011/12/16/ext-js-4-notification-bar/ */
+.notifybar {
+	border: 0px !important;
+	margin: 0px !important;
+	padding: 0px 0px 0px 0px;
+}
+
+.notifybar-success,.x-nlg .notifybar-success {
+	background-color: #D1EED1 !important;
+	background-image: none !important;
+}
+
+.notifybar-error,.x-nlg .notifybar-error {
+	background-color: #FDDFDE !important;
+	background-image: none !important;
+}
+
+.notifybar-warning,.x-nlg .notifybar-warning {
+	background-color: #F7C527 !important;
+	background-image: none !important;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+
+.nopadding .x-grid-cell-inner {
+	padding: 0px 0px 0px 0px;
+	white-space: nowrap;
+}
+
+
+.x-body {
+	background-image: url('images/bg_body.png');
+	/*fit*/
+	/* background-size: 100%; */
+	background-repeat: repeat-x;
+}
+
+.form-error-state {
+	padding-left: 10px;
+	color: #FF3300;
+}

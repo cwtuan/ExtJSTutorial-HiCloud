@@ -1,0 +1,10 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+
+<script type="text/javascript">
+	Ext.onReady(function() {
+
+		console.info('onReady');
+		Ext.create('MyApp.view.Viewport');
+
+	});
+</script>

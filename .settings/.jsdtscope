@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="WEB-INF/**|_packages/**|all-classes.js|app/**|bootstrap.js|build.xml|css/**|ext/**|js/**|resources/**|theme-capture.json|theme-capture.png" kind="src" path="src/main/webapp"/>
+	<classpathentry excluding="META-INF/**" kind="src" path="target/m2e-wtp/web-resources"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.WebProject">
+		<attributes>
+			<attribute name="hide" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path=""/>
+</classpath>
