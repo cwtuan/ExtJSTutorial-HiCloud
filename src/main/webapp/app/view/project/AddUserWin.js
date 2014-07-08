@@ -58,7 +58,7 @@
 					var url = me.panel.store.getBaseUrl(); // getBaseUrl is implemented in ExtOverride.js
 
 					MyApp.Restful.request({
-						url : url, // userData is not extjs model, we need to specify the url
+						url : url, // userData is not extjs model, so we need to specify the url
 						record : userData,
 						method : 'POST',
 						eventType : MyApp.event.User,
