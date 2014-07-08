@@ -37,8 +37,6 @@ Ext.define('MyApp.view.Entry', {
 
 		MyApp.ExtOverride.init(MyApp.Config);
 
-		MyApp.Session.getSession();
-
 		var menuItems = [];
 
 		menuItems.push({
@@ -60,20 +58,6 @@ Ext.define('MyApp.view.Entry', {
 			id : 'notifybar',
 			maxWidth : 600
 		}, '->', {
-			itemId : 'accountmenu',
-			menu : {
-				showSeparator : false,
-				defaults : {
-					plain : true
-				},
-				items : [ {
-					text : Locale.getMsg('view.session.signout'),
-					handler : function() {
-						me.switchActivePage('./signout', true, this);
-					}
-				} ]
-			}
-		}, {
 			height : 30,
 			text : Locale.getMsg('view.about'),
 			menu : {
@@ -118,10 +102,6 @@ Ext.define('MyApp.view.Entry', {
 					Ext.getCmp('notifybar').showError(Locale.getMsg('view.oldBrowserWarning'));
 				}
 			}
-		});
-
-		MyApp.event.Session.on('read', function(user) {
-			me.down('#accountmenu').setText(user.id);
 		});
 
 		console.info('viewport is created');
