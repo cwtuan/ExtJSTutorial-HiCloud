@@ -4,6 +4,8 @@
     Sencha Cmd when upgrading.
 */
 
+// (hicloud)
+
 Ext.application({
     name: 'MyApp',
 

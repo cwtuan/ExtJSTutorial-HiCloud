@@ -1,7 +1,14 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 
+<!-- TODO move to all classes -->
 <script src="js/locale-2013-12-11.js"></script>
 
-<script type="text/javascript" src="all-classes.js?timestamp=2014-07-08_13h39m31s"></script>
+<!-- loaded by HiCloud:  -->
+<script src="ext/ext-all-debug.js"></script>
+<!-- <script src="bootstrap.js"></script> -->
+<script src="js/utility-2013-08-22.js"></script>
+
+<!-- should be loaded dynamically by viewport -->
+<!-- <script type="text/javascript" src="all-classes.js?timestamp=2014-07-08_20h38m26s"></script> -->
 
 

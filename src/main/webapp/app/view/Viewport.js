@@ -5,7 +5,14 @@ Ext.define('MyApp.view.Viewport', {
 
 	requires : [
 	// layout
-	'Ext.layout.container.Card', 'Ext.layout.container.Border', 'MyApp.HiCloudSetting'
+	'Ext.layout.container.Card', 'Ext.layout.container.Border',
+
+	// util
+	'MyApp.HiCloudSetting',
+
+	// view
+	// for sencha cmd
+	'MyApp.view.Entry'
 
 	],
 	id : 'viewport',
@@ -29,12 +36,13 @@ Ext.define('MyApp.view.Viewport', {
 
 		var enrty = {
 			// TODO dev and /
-			// entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/app/view/Entry.js',
-			entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/entrypoint',
-			entryClass : 'MyApp.view.Entry'
+			// entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/app/view/Entry.js', // for dev
+			// entrypoint : 'http://localhost:8080/ExtJSTutorial-HiCloud/all-classes.js', // for production
+			src : 'http://localhost:8080/ExtJSTutorial-HiCloud/entrypoint?debug=' + (window.location.pathname.indexOf('dev') != -1),
+			entry : 'MyApp.view.Entry'
 		};
 
-		loadJS(enrty.entrypoint);
+		loadJS(enrty.src);
 
 		me.items = [ {
 			xtype : 'panel',
@@ -44,10 +52,10 @@ Ext.define('MyApp.view.Viewport', {
 				items : menuItems,
 				height : 78,
 				style : {
-					backgroundColor : '#919191',
+					backgroundColor : '#919191'
 				}
 			}),
-			items : [ Ext.create(enrty.entryClass) ]
+			items : [ Ext.create(enrty.entry) ]
 		} ];
 
 		me.callParent(arguments);

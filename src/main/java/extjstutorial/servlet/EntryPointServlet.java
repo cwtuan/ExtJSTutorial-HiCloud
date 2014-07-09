@@ -40,26 +40,29 @@ public class EntryPointServlet extends HttpServlet {
 
 		TrustManager[] trustAllCerts = new TrustManager[] { new X509TrustManager() {
 
-//			@Override
+			// @Override
 			public java.security.cert.X509Certificate[] getAcceptedIssuers() {
 				return null;
 			}
 
-//			@Override
+			// @Override
 			public void checkClientTrusted(java.security.cert.X509Certificate[] certs, String authType) {
 			}
 
-//			@Override
+			// @Override
 			public void checkServerTrusted(java.security.cert.X509Certificate[] certs, String authType) {
 			}
-			
+
 		} };
+
+		// tony: debug=false, if there's no request parameter for debug
+		String filename = "true".equals(request.getParameter("debug")) ? "/app/view/Entry.js" : "/all-classes.js";
+		System.out.println("filename=" + filename);
 		
-		
+		String failfilename = "/fail.js";
+
 		HttpGet httpget = null;
 		DefaultHttpClient hc = null;
-		String filename = "/app/view/Entry.js";
-		String failfilename = "/fail.js";
 		InputStream inp = null;
 		InputStreamReader isr = null;
 		BufferedReader reader = null;
@@ -69,66 +72,66 @@ public class EntryPointServlet extends HttpServlet {
 		StringBuilder result = new StringBuilder();
 		String outline = null;
 		try {
-//			try {
-//				SSLContext sslcontext = SSLContext.getInstance("TLS");
-//				sslcontext.init(null, trustAllCerts, null);
-//
-//				SSLSocketFactory sf = new SSLSocketFactory(sslcontext, SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
-//
-//				SchemeRegistry schemeRegistry = new SchemeRegistry();
-//				schemeRegistry.register(new Scheme("http", 80, PlainSocketFactory.getSocketFactory()));
-//				schemeRegistry.register(new Scheme("https", 443, sf));
-//
-//				SingleClientConnManager cm = new SingleClientConnManager(schemeRegistry);
-//				hc = new DefaultHttpClient(cm);
-//				HttpParams httpParameters = new BasicHttpParams();
-//				HttpConnectionParams.setConnectionTimeout(httpParameters, 5000);
-//				HttpConnectionParams.setSoTimeout(httpParameters, 15000);
-//				hc.setParams(httpParameters);
-//				URIBuilder builder = new URIBuilder();
-//
-//				String hn = request.getParameter("hnno"); // 用戶的HN
-//				String locale = request.getParameter("locale"); // 現在使用的語系
-//				String sessionid = request.getParameter("sessionid"); // cboss session id
-//				String token = request.getParameter("token"); // cboss token
-//				String userid = request.getParameter("userid"); // 用戶登入的帳號
-//
-//				HttpSession session = request.getSession(true);
-//
-//				// Check if our session variable is set, if so, get the session variable value
-//				// which is an Integer object, and add one to the value.
-//				// If the value is not set, create an Integer object with the default value 1.
-//				// Add the variable to the session overwriting any possible present values.
-//				session.setAttribute("hnno", hn);
-//				session.setAttribute("locale", locale);
-//				session.setAttribute("sessionid", sessionid);
-//				session.setAttribute("token", token);
-//				session.setAttribute("userid", userid);
-//
-//				builder.setScheme("https").setHost("172.21.246.120").setPath("/cloud_ei/api/ext/identity/getSignature")
-//						.setParameter("userid", hn).setParameter("token", token).setParameter("sessionid", userid);
-//				httpget = new HttpGet(builder.build());
-//				HttpResponse resp = hc.execute(httpget);
-//
-//				input_reader = new InputStreamReader(resp.getEntity().getContent());
-//				rd = new BufferedReader(input_reader);
-//				String line = "";
-//				while ((line = rd.readLine()) != null) {
-//					result.append(line);
-//				}
-//				outline = result.toString();
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//			if (outline != null && outline.length() > 0 && outline.contains("\"code\":200,\"mesg\":\"success\"")) {
-//				inp = context.getResourceAsStream(filename);
-//			} else {
-//				inp = context.getResourceAsStream(failfilename);
-//			}
-			
+			// try {
+			// SSLContext sslcontext = SSLContext.getInstance("TLS");
+			// sslcontext.init(null, trustAllCerts, null);
+			//
+			// SSLSocketFactory sf = new SSLSocketFactory(sslcontext, SSLSocketFactory.ALLOW_ALL_HOSTNAME_VERIFIER);
+			//
+			// SchemeRegistry schemeRegistry = new SchemeRegistry();
+			// schemeRegistry.register(new Scheme("http", 80, PlainSocketFactory.getSocketFactory()));
+			// schemeRegistry.register(new Scheme("https", 443, sf));
+			//
+			// SingleClientConnManager cm = new SingleClientConnManager(schemeRegistry);
+			// hc = new DefaultHttpClient(cm);
+			// HttpParams httpParameters = new BasicHttpParams();
+			// HttpConnectionParams.setConnectionTimeout(httpParameters, 5000);
+			// HttpConnectionParams.setSoTimeout(httpParameters, 15000);
+			// hc.setParams(httpParameters);
+			// URIBuilder builder = new URIBuilder();
+			//
+			// String hn = request.getParameter("hnno"); // 用戶的HN
+			// String locale = request.getParameter("locale"); // 現在使用的語系
+			// String sessionid = request.getParameter("sessionid"); // cboss session id
+			// String token = request.getParameter("token"); // cboss token
+			// String userid = request.getParameter("userid"); // 用戶登入的帳號
+			//
+			// HttpSession session = request.getSession(true);
+			//
+			// // Check if our session variable is set, if so, get the session variable value
+			// // which is an Integer object, and add one to the value.
+			// // If the value is not set, create an Integer object with the default value 1.
+			// // Add the variable to the session overwriting any possible present values.
+			// session.setAttribute("hnno", hn);
+			// session.setAttribute("locale", locale);
+			// session.setAttribute("sessionid", sessionid);
+			// session.setAttribute("token", token);
+			// session.setAttribute("userid", userid);
+			//
+			// builder.setScheme("https").setHost("172.21.246.120").setPath("/cloud_ei/api/ext/identity/getSignature")
+			// .setParameter("userid", hn).setParameter("token", token).setParameter("sessionid", userid);
+			// httpget = new HttpGet(builder.build());
+			// HttpResponse resp = hc.execute(httpget);
+			//
+			// input_reader = new InputStreamReader(resp.getEntity().getContent());
+			// rd = new BufferedReader(input_reader);
+			// String line = "";
+			// while ((line = rd.readLine()) != null) {
+			// result.append(line);
+			// }
+			// outline = result.toString();
+			// } catch (Exception e) {
+			// e.printStackTrace();
+			// }
+			// if (outline != null && outline.length() > 0 && outline.contains("\"code\":200,\"mesg\":\"success\"")) {
+			// inp = context.getResourceAsStream(filename);
+			// } else {
+			// inp = context.getResourceAsStream(failfilename);
+			// }
+
 			// tony: Assume the user is valid
-			 inp = context.getResourceAsStream(filename);
-			
+			inp = context.getResourceAsStream(filename);
+
 			if (inp != null) {
 				isr = new InputStreamReader(inp);
 				reader = new BufferedReader(isr);
