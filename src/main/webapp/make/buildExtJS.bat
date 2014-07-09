@@ -6,10 +6,10 @@ copy /Y %webapp%\WEB-INF\jsp\loadjs_dev.jspf %webapp%\
 cd %webapp%
 
 sencha  --time compile -classpath=ext/src,js page -in loadjs_dev.jspf -out WEB-INF\jsp\loadjs_fake.jspf -yui
-
 del WEB-INF\jsp\loadjs_fake.jspf
 
-move /Y %webapp%\WEB-INF\jsp\all-classes.js %webapp%\
+
+move /Y %webapp%\WEB-INF\jsp\all-classes.js %webapp%\all-classes-tmp.js
 del %webapp%\loadjs_dev.jspf
 
 cd %make_dir%
