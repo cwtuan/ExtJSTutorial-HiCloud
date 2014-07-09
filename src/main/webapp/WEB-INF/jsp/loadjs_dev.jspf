@@ -1,16 +1,12 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 
-<script src="js/locale-2013-12-11.js"></script>
-<script src="ext/ext-all-debug.js"></script>
-<script src="bootstrap.js"></script>
-<script src="js/utility-2013-08-22.js"></script>
-<script src="app.js"></script>
-<script src="app/Application.js"></script>
-
 
 <!-- <x-compile> -->
 <!-- <x-bootstrap> -->
-
+<script src="js/locale-2013-12-11.js"></script>
+<script src="ext/ext-all-debug.js"></script>
+<script src="bootstrap.js"></script>
+<script src="app.js"></script>
 <!-- </x-bootstrap> -->
 <script src="app/view/Entry.js"></script>
 <!-- </x-compile> -->

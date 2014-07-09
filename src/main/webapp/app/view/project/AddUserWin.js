@@ -55,7 +55,7 @@
 					var userData = this.up('form').getValues();
 					var modelName = me.panel.store.model.modelName;
 
-					var url = me.panel.store.getBaseUrl(); // getBaseUrl is implemented in ExtOverride.js
+					var url = Ext.String.format('rest/projects/{0}/users', project.getId()); 
 
 					MyApp.Restful.request({
 						url : url, // userData is not extjs model, so we need to specify the url

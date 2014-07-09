@@ -1,13 +1,12 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 
-<script src="js/locale-2013-12-11.js"></script>
-<script src="ext/ext-all-debug.js"></script>
-<!-- <script src="bootstrap.js"></script> -->
-<script src="js/utility-2013-08-22.js"></script>
-<script src="app.js"></script>
-<script src="app/Application.js"></script>
+<!-- locale-min.js will be loaded in all-classes.js by post-compile.js with nodeJS -->
+<!-- <script src="js/locale-min.js"></script> -->
 
-<!-- all-classes.js -->
+<!-- hicloud app will load these 3 js files-->
+<script src="ext/ext-all-debug.js"></script>
+<script src="app.js"></script>
+<!-- entrypoint is all-classes.js -->
 <script src="http://localhost:8080/ExtJSTutorial-HiCloud/entrypoint"></script>
 
 

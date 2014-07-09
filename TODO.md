@@ -31,7 +31,7 @@
 bootstrpe.js不會再allclass裡
 
 + TODO locale-2013-12-11.js打包到最all class前面 (loadjs.jspf)
-+ TODO remove loadjs_fake
+
 
 + 打包yui->>> script
 
@@ -39,7 +39,7 @@ bootstrpe.js不會再allclass裡
 
 		loadJS沒有註冊到class系統，改用script
 		//MyApp.ExtOverride.init(MyApp.Config);
-		移除all-classes的Ext
+		移除all-classes的Ext (找到MyApp.Config，刪除這之前全部code)
 
 
 ##tip
@@ -47,6 +47,7 @@ bootstrpe.js不會再allclass裡
 - notifybar改成alert?
 - controller改用event(Ex: projectGrid, userGrid)
 - After make, remove ext from all-classes.js
+- 移除ExtOverride, ExtFix
 
 ## future work
 maintoolbar at left
