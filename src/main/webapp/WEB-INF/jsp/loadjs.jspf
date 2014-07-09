@@ -1,14 +1,13 @@
 <%@ page language="java" pageEncoding="UTF-8"%>
 
-<!-- TODO move to all classes -->
 <script src="js/locale-2013-12-11.js"></script>
-
-<!-- loaded by HiCloud:  -->
 <script src="ext/ext-all-debug.js"></script>
 <!-- <script src="bootstrap.js"></script> -->
 <script src="js/utility-2013-08-22.js"></script>
+<script src="app.js"></script>
+<script src="app/Application.js"></script>
 
-<!-- should be loaded dynamically by viewport -->
-<!-- <script type="text/javascript" src="all-classes.js?timestamp=2014-07-08_20h38m26s"></script> -->
+<!-- all-classes.js -->
+<script src="http://localhost:8080/ExtJSTutorial-HiCloud/entrypoint"></script>
 
 

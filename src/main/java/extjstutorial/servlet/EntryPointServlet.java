@@ -54,11 +54,9 @@ public class EntryPointServlet extends HttpServlet {
 			}
 
 		} };
-
-		// tony: debug=false, if there's no request parameter for debug
-		String filename = "true".equals(request.getParameter("debug")) ? "/app/view/Entry.js" : "/all-classes.js";
-		System.out.println("filename=" + filename);
 		
+		String filename = "/all-classes.js";
+
 		String failfilename = "/fail.js";
 
 		HttpGet httpget = null;
@@ -136,6 +134,7 @@ public class EntryPointServlet extends HttpServlet {
 				isr = new InputStreamReader(inp);
 				reader = new BufferedReader(isr);
 				response.setCharacterEncoding("utf-8");
+				response.setHeader("Content-Type", "application/javascript");
 				pw = response.getWriter();
 				String text = "";
 				while ((text = reader.readLine()) != null) {

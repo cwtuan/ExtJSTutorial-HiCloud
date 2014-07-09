@@ -1,4 +1,4 @@
-+ loadjs_dev's requires is necessary? NO, 改在MyApp.Application即可
+# ExtJS 4.2 #
 
 + requires 
 
@@ -23,4 +23,32 @@
 
 - the order of external js : Locale?????
 
-- notifybar css 
+#hicloud integration
+
+- http://localhost:8080/cboss_ui_plugin/sample.entrypoint?hnno=xx&locale=xx&sessionid=xx&token=xx&userid=xx
+
+- extjs, app.js, Application.js, viewport.js是否也要包含在all-classes.js  => NO (可再loadjs加入這些，all-classes移除這些)
+bootstrpe.js不會再allclass裡
+
++ TODO locale-2013-12-11.js打包到最all class前面 (loadjs.jspf)
++ TODO remove loadjs_fake
+
++ 打包yui->>> script
+
++ make
+
+		loadJS沒有註冊到class系統，改用script
+		//MyApp.ExtOverride.init(MyApp.Config);
+		移除all-classes的Ext
+
+
+##tip
+- viewport (hicloud) -> MyApp.view.Entry(hidesk)
+- notifybar改成alert?
+- controller改用event(Ex: projectGrid, userGrid)
+- After make, remove ext from all-classes.js
+
+## future work
+maintoolbar at left
+
+

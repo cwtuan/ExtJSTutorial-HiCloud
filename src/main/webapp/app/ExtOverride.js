@@ -1,6 +1,6 @@
 Ext.define('MyApp.ExtOverride', {
 	singleton : true,
-	init : function(config) {
+	init : function() {
 
 		// Convert ExtJS model in store to primitive object
 		Ext.define('Ext.enhance.data.Store', {

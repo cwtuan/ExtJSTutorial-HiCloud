@@ -9,7 +9,7 @@ Ext.define('MyApp.view.Entry', {
 
 	// Utils
 	'MyApp.Session', 'MyApp.util.Format', 'MyApp.util.Validator', 'MyApp.util.Restful', 'MyApp.locale.Converter', 'Ext.util.Cookies', 'MyApp.Const',
-			'MyApp.Config', 'MyApp.ExtOverride', 'MyApp.util.Restful', 'MyApp.ux.proxy.NestedRest', 'MyApp.reader.RestTaskGrid', 'MyApp.action.Action',
+			'MyApp.Config', 'MyApp.util.Restful', 'MyApp.ux.proxy.NestedRest', 'MyApp.reader.RestTaskGrid', 'MyApp.action.Action',
 
 			// events
 			'MyApp.event.Session', 'MyApp.event.Project', 'MyApp.event.User',
@@ -31,11 +31,23 @@ Ext.define('MyApp.view.Entry', {
 		border : false,
 		xtype : 'container'
 	},
+//	override : function() {
+//		// get last base URL after store load
+//		Ext.define('Ext.enhance.data.Store', {
+//			override : 'Ext.data.Store',
+//			getBaseUrl : function() {
+//				var me = this;
+//				return me.proxy.buildUrl({
+//					operation : new Ext.data.Operation(me.lastOptions),
+//					url : me.proxy.url
+//				});
+//			}
+//		});
+//	},
 
 	initComponent : function() {
 		var me = this;
-
-		MyApp.ExtOverride.init(MyApp.Config);
+//		me.overide();
 
 		var menuItems = [];
 
