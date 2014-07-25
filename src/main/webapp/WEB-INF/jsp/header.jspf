@@ -16,6 +16,6 @@
 <link type="text/css" rel="stylesheet" href="css/override.css" />
 
 <script>
-// setting from hicloud
+// setting from hicloud https://userportal.hicloud.hinet.net/cloud/ui/app.js
 APP_LANG = 'en_US'; // 'zh_TW'
 </script>
