@@ -160,5 +160,5 @@ var Locale = {
 		return null;
 	}
 };
-
+Locale.setLanguage(APP_LANG);
 Locale.load();

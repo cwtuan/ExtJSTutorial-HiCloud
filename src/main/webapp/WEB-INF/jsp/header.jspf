@@ -14,3 +14,8 @@
 <!-- <link type="text/css" rel="stylesheet" href="ext/resources/css/ext-all.css" /> -->
 <link rel="stylesheet" href="bootstrap.css">
 <link type="text/css" rel="stylesheet" href="css/override.css" />
+
+<script>
+// setting from hicloud
+APP_LANG = 'en_US'; // 'zh_TW'
+</script>
